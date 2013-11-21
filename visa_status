@@ -32,7 +32,7 @@ function get_visa_status()
 	     --data $BIRTHDAY_STR \
 	     --data 'cmdSubmit=Submit' \
 	     $URL \
-	| grep lblScanStatus | sed 's/\(.*\)px;">\(.*\)<\(.*\)><\(.*\)>/\2/') 
+	     | grep lblScanStatus | sed 's/\(.*\)px;">\(.*\)<\(.*\)><\(.*\)>/\2/') 
 }
 
 function notify_me()
